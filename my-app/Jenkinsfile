@@ -1,0 +1,7 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                // Get code from a GitHub repository
+                git url: 'https://github.com/devopshint/jenkins-pipeline-example.git', branch: 'main'
